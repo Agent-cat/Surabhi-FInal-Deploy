@@ -81,11 +81,11 @@ const App = () => {
         {deploymentComplete ? (
           <div className="completion-message">
             
-            <h2>Deployment Complete</h2>
+            
+            <h2 style={{ color: 'red',paddingTop: '20px' }}>Website is Live!</h2>
             <button onClick={handleOpenWebsite} className="open-website-btn">
               Open Website
             </button>
-            <h2 style={{ color: 'red',paddingTop: '20px' }}>Website is Live!</h2>
           </div>
         ) : (
           <DeploymentAnimation onComplete={handleDeploymentComplete} />
